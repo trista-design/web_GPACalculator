@@ -1,0 +1,283 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+html body {
+  background-color: rgb(27, 27, 27);
+  font-family: "cwTeXYen", "Baloo 2", cursive;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* 確保body最小高度100% */
+}
+html body section.animation-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+html body section.animation-wrapper section.animation {
+  width: 100%;
+  margin-top: 10vh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body section.animation-wrapper section.animation .hero {
+  width: 100%;
+  height: 0;
+}
+html body section.animation-wrapper section.animation .hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body section.animation-wrapper section.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(144, 144, 144), rgb(0, 0, 0));
+  z-index: -1;
+}
+html body section.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* 使main佔滿剩餘垂直空間 */
+}
+html body section.container header nav .title {
+  width: 100%;
+  height: 8.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+}
+html body section.container header nav .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 8.5rem;
+}
+html body section.container header nav .hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  width: 100%;
+  height: 8.5rem;
+}
+html body section.container header nav .hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body section.container main {
+  flex-grow: 1; /* 佔滿剩餘的垂直空間 */
+}
+html body section.container main section.main-part {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
+}
+html body section.container main section.main-part div.sort-btn .btn {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  margin: 0.5rem;
+  margin-bottom: 1.75rem;
+  border: 0.25px solid rgb(29, 29, 29);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+html body section.container main section.main-part div.all-inputs form div.grader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body section.container main section.main-part div.all-inputs form div.grader input,
+html body section.container main section.main-part div.all-inputs form div.grader select {
+  padding: 0.75rem;
+  margin: 0.15rem;
+  font-size: 1.05rem;
+  border: 0.25rem solid rgb(29, 29, 29);
+  border-radius: 0.5rem;
+}
+html body section.container main section.main-part div.all-inputs form div.grader input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+html body section.container main section.main-part div.all-inputs form div.grader .class-name {
+  width: 30%;
+}
+html body section.container main section.main-part div.all-inputs form div.grader .class-credit {
+  width: 12%;
+  text-align: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+html body section.container main section.main-part div.all-inputs form div.grader .class-grade {
+  width: 12%;
+  text-align: center;
+}
+html body section.container main section.main-part div.all-inputs form div.grader .class-gpa {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgb(144, 144, 144);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+html body section.container main section.main-part div.all-inputs form div.grader button.trash-btn {
+  border: none;
+  background-color: rgb(27, 27, 27);
+  margin-left: 0.35rem;
+  cursor: pointer;
+}
+html body section.container main section.main-part div.all-inputs form div.grader button.trash-btn i {
+  font-size: 1.5rem;
+  color: white;
+  pointer-events: none;
+}
+html body section.container main section.main-part button.plus-btn {
+  margin: 1.5rem;
+  background-color: rgb(27, 27, 27);
+  border: none;
+}
+html body section.container main section.main-part button.plus-btn i {
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+html body section.container main section.main-part form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body section.container main section.main-part form div.result-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body section.container main section.main-part form div.result-label label {
+  width: 100px;
+}
+html body section.container main section.main-part form div.result-grade {
+  margin-top: 0.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+html body section.container main section.main-part form div.result-grade input {
+  font-size: 2.5rem;
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+html body section.container main section.main-part form div.result-grade #circle-credit {
+  border: 3px solid #37e2d5;
+  animation-name: border_color1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+html body section.container main section.main-part form div.result-grade #circle-grade {
+  border: 3px solid #fb5050;
+  animation-name: border_color2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+html body section.container main section.main-part form div.result-grade #circle-gpa {
+  border: 3px solid #fedb39;
+  animation-name: border_color3;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+html body footer {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+  color: white;
+  font-size: 1.05rem;
+}
+
+@keyframes border_color1 {
+  0% {
+    border-color: #37e2d5;
+  }
+  33% {
+    border-color: #fb5050;
+  }
+  66% {
+    border-color: #fedb39;
+  }
+}
+@keyframes border_color2 {
+  0% {
+    border-color: #fb5050;
+  }
+  33% {
+    border-color: #fedb39;
+  }
+  66% {
+    border-color: #37e2d5;
+  }
+}
+@keyframes border_color3 {
+  0% {
+    border-color: #fedb39;
+  }
+  33% {
+    border-color: #37e2d5;
+  }
+  66% {
+    border-color: #fb5050;
+  }
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}/*# sourceMappingURL=style.css.map */

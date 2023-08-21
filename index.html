@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>成績計算網站</title>
+    <meta name="autor" content="Trista" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <!-- 開場動畫 -->
+    <section class="animation-wrapper">
+      <section class="animation">
+        <div class="hero">
+          <img src="./img/math.jpg" alt="math-animation" />
+        </div>
+      </section>
+      <section class="slider"></section>
+    </section>
+    <section class="container">
+      <!-- NavBar -->
+      <header>
+        <nav>
+          <h1 class="title">大學GPA計算器</h1>
+          <div class="cover"></div>
+          <div class="hero">
+            <img src="./img/math1.jpg" alt="math-navBar" />
+          </div>
+        </nav>
+      </header>
+      <!-- main part -->
+      <main>
+        <section class="main-part">
+          <!-- 排序按鈕 -->
+          <!-- <div class="sort-btn">
+            <button class="btn sort-descending">降序排序</button>
+            <button class="btn sort-ascending">升序排序</button>
+          </div> -->
+          <!-- 表格 -->
+          <div class="all-inputs">
+            <!-- 第一個表格 -->
+            <form class="grader-form">
+              <div class="grader">
+                <input
+                  type="text"
+                  placeholder="課程名稱"
+                  class="class-name"
+                /><!--
+              --><input
+                  type="number"
+                  placeholder="學分"
+                  min="0"
+                  max="6"
+                  class="class-credit"
+                /><!--
+            --><input
+                  type="number"
+                  class="class-grade"
+                  min="0"
+                  max="100"
+                  placeholder="成績"
+                /><!--
+            --><select name="class-gpa" class="class-gpa">
+                  <option value="" selected hidden></option>
+                  <option value="A+">A+</option>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B">B</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="F">F</option></select
+                ><!--
+            --><button class="trash-btn">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </form>
+            <!-- 第二個表格 -->
+            <form class="grader-form">
+              <div class="grader">
+                <input
+                  type="text"
+                  placeholder="課程名稱"
+                  class="class-name"
+                /><!--
+              --><input
+                  type="number"
+                  placeholder="學分"
+                  min="0"
+                  max="6"
+                  class="class-credit"
+                /><!--
+            --><input
+                  type="number"
+                  class="class-grade"
+                  min="0"
+                  max="100"
+                  placeholder="成績"
+                /><!--
+            --><select name="class-gpa" class="class-gpa">
+                  <option value="" disabled selected hidden></option>
+                  <option value="A+">A+</option>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B">B</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="F">F</option></select
+                ><!--
+            --><button class="trash-btn">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </form>
+            <!-- 第三個表格 -->
+            <form class="grader-form">
+              <div class="grader">
+                <input
+                  type="text"
+                  placeholder="課程名稱"
+                  class="class-name"
+                /><!--
+              --><input
+                  type="number"
+                  placeholder="學分"
+                  min="0"
+                  max="6"
+                  class="class-credit"
+                /><!--
+            --><input
+                  type="number"
+                  class="class-grade"
+                  min="0"
+                  max="100"
+                  placeholder="成績"
+                /><!--
+            --><select name="class-gpa" class="class-gpa">
+                  <option value="" disabled selected hidden></option>
+                  <option value="A+">A+</option>
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B">B</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="F">F</option></select
+                ><!--
+            --><button class="trash-btn">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- 增加按鈕 -->
+          <button class="plus-btn">
+            <i class="fa-solid fa-square-plus"></i>
+          </button>
+          <!-- 結果表格 -->
+          <div class="result-inputs">
+            <form>
+              <div class="result-label">
+                <label class="label-credit">修課學分</label>
+                <label class="label-grade">學期平均</label>
+                <label class="label-gpa">學期GPA</label>
+              </div>
+              <div class="result-grade">
+                <input type="text" id="circle-credit" value="0.0" readonly />
+                <input type="text" id="circle-grade" value="0.0" readonly />
+                <input type="text" id="circle-gpa" value="0.0" readonly />
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </section>
+    <footer>© 2023 本系統由 Trista Hung 開發設計</footer>
+    <!-- cdnjs-gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- JS -->
+    <script src="./app.js"></script>
+  </body>
+</html>
