@@ -64,6 +64,33 @@ html body section.container header nav .title {
   font-size: 3rem;
   color: white;
 }
+@media screen and (max-width: 1024px) {
+  html body section.container header nav .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html body section.container header nav .title {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  html body section.container header nav .title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  html body section.container header nav .title {
+    height: 7rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body section.container header nav .title {
+    font-size: 2rem;
+    height: 6rem;
+  }
+}
 html body section.container header nav .cover {
   position: absolute;
   top: 0;
@@ -73,6 +100,21 @@ html body section.container header nav .cover {
   width: 100%;
   height: 8.5rem;
 }
+@media screen and (max-width: 576px) {
+  html body section.container header nav .cover {
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  html body section.container header nav .cover {
+    height: 7rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body section.container header nav .cover {
+    height: 6rem;
+  }
+}
 html body section.container header nav .hero {
   position: absolute;
   top: 0;
@@ -80,6 +122,21 @@ html body section.container header nav .hero {
   z-index: -3;
   width: 100%;
   height: 8.5rem;
+}
+@media screen and (max-width: 576px) {
+  html body section.container header nav .hero {
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  html body section.container header nav .hero {
+    height: 7rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body section.container header nav .hero {
+    height: 6rem;
+  }
 }
 html body section.container header nav .hero img {
   width: 100%;
@@ -98,19 +155,31 @@ html body section.container main section.main-part {
   text-align: center;
   padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
 }
-html body section.container main section.main-part div.sort-btn .btn {
-  padding: 0.5rem 0.75rem;
-  font-size: 0.9rem;
-  margin: 0.5rem;
-  margin-bottom: 1.75rem;
-  border: 0.25px solid rgb(29, 29, 29);
-  border-radius: 0.25rem;
-  cursor: pointer;
-}
 html body section.container main section.main-part div.all-inputs form div.grader {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 1000px;
+}
+@media screen and (max-width: 1024px) {
+  html body section.container main section.main-part div.all-inputs form div.grader {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html body section.container main section.main-part div.all-inputs form div.grader {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 576px) {
+  html body section.container main section.main-part div.all-inputs form div.grader {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body section.container main section.main-part div.all-inputs form div.grader {
+    width: 370px;
+  }
 }
 html body section.container main section.main-part div.all-inputs form div.grader input,
 html body section.container main section.main-part div.all-inputs form div.grader select {
@@ -119,6 +188,29 @@ html body section.container main section.main-part div.all-inputs form div.grade
   font-size: 1.05rem;
   border: 0.25rem solid rgb(29, 29, 29);
   border-radius: 0.5rem;
+  max-width: 100vw;
+}
+@media screen and (max-width: 768px) {
+  html body section.container main section.main-part div.all-inputs form div.grader input,
+  html body section.container main section.main-part div.all-inputs form div.grader select {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  html body section.container main section.main-part div.all-inputs form div.grader input,
+  html body section.container main section.main-part div.all-inputs form div.grader select {
+    font-size: 0.8rem;
+    margin: 0.05rem;
+    padding: 0.6rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body section.container main section.main-part div.all-inputs form div.grader input,
+  html body section.container main section.main-part div.all-inputs form div.grader select {
+    font-size: 0.8rem;
+    margin: 0.05rem;
+    padding: 0.6rem;
+  }
 }
 html body section.container main section.main-part div.all-inputs form div.grader input[type=number] {
   -moz-appearance: textfield;
@@ -126,7 +218,17 @@ html body section.container main section.main-part div.all-inputs form div.grade
           appearance: textfield;
 }
 html body section.container main section.main-part div.all-inputs form div.grader .class-name {
-  width: 30%;
+  width: 35%;
+}
+@media screen and (max-width: 576px) {
+  html body section.container main section.main-part div.all-inputs form div.grader .class-name {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body section.container main section.main-part div.all-inputs form div.grader .class-name {
+    width: 30%;
+  }
 }
 html body section.container main section.main-part div.all-inputs form div.grader .class-credit {
   width: 12%;
@@ -135,9 +237,29 @@ html body section.container main section.main-part div.all-inputs form div.grade
      -moz-appearance: none;
           appearance: none;
 }
+@media screen and (max-width: 576px) {
+  html body section.container main section.main-part div.all-inputs form div.grader .class-credit {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body section.container main section.main-part div.all-inputs form div.grader .class-credit {
+    width: 15%;
+  }
+}
 html body section.container main section.main-part div.all-inputs form div.grader .class-grade {
   width: 12%;
   text-align: center;
+}
+@media screen and (max-width: 576px) {
+  html body section.container main section.main-part div.all-inputs form div.grader .class-grade {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body section.container main section.main-part div.all-inputs form div.grader .class-grade {
+    width: 15%;
+  }
 }
 html body section.container main section.main-part div.all-inputs form div.grader .class-gpa {
   width: 3.5rem;
@@ -148,6 +270,12 @@ html body section.container main section.main-part div.all-inputs form div.grade
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+@media screen and (max-width: 380px) {
+  html body section.container main section.main-part div.all-inputs form div.grader .class-gpa {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 html body section.container main section.main-part div.all-inputs form div.grader button.trash-btn {
   border: none;
@@ -160,40 +288,90 @@ html body section.container main section.main-part div.all-inputs form div.grade
   color: white;
   pointer-events: none;
 }
+@media screen and (max-width: 380px) {
+  html body section.container main section.main-part div.all-inputs form div.grader button.trash-btn i {
+    font-size: 1.3rem;
+  }
+}
 html body section.container main section.main-part button.plus-btn {
   margin: 1.5rem;
   background-color: rgb(27, 27, 27);
   border: none;
+}
+@media screen and (max-width: 380px) {
+  html body section.container main section.main-part button.plus-btn {
+    margin: 1rem;
+  }
 }
 html body section.container main section.main-part button.plus-btn i {
   font-size: 2.5rem;
   color: white;
   cursor: pointer;
 }
-html body section.container main section.main-part form {
+@media screen and (max-width: 380px) {
+  html body section.container main section.main-part button.plus-btn i {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body section.container main section.main-part button.plus-btn i {
+    font-size: 1.8rem;
+  }
+}
+html body section.container main section.main-part div.result-inputs form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-html body section.container main section.main-part form div.result-label {
+html body section.container main section.main-part div.result-inputs form div.result-label {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
-  width: 450px;
+  width: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-html body section.container main section.main-part form div.result-label label {
-  width: 100px;
+@media screen and (max-width: 1024px) {
+  html body section.container main section.main-part div.result-inputs form div.result-label {
+    width: 600px;
+  }
 }
-html body section.container main section.main-part form div.result-grade {
+@media screen and (max-width: 768px) {
+  html body section.container main section.main-part div.result-inputs form div.result-label {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 576px) {
+  html body section.container main section.main-part div.result-inputs form div.result-label {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 440px) {
+  html body section.container main section.main-part div.result-inputs form div.result-label {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 380px) {
+  html body section.container main section.main-part div.result-inputs form div.result-label {
+    width: 300px;
+    font-size: 1.2rem;
+    margin: 0.4rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body section.container main section.main-part div.result-inputs form div.result-label {
+    width: 280px;
+    font-size: 1.1rem;
+  }
+}
+html body section.container main section.main-part div.result-inputs form div.result-grade {
   margin-top: 0.25rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-html body section.container main section.main-part form div.result-grade input {
+html body section.container main section.main-part div.result-inputs form div.result-grade input {
   font-size: 2.5rem;
   font-family: "Baloo 2", cursive;
   font-weight: bold;
@@ -202,23 +380,59 @@ html body section.container main section.main-part form div.result-grade input {
   height: 100px;
   border-radius: 50%;
 }
-html body section.container main section.main-part form div.result-grade #circle-credit {
+@media screen and (max-width: 440px) {
+  html body section.container main section.main-part div.result-inputs form div.result-grade input {
+    width: 90px;
+    height: 90px;
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  html body section.container main section.main-part div.result-inputs form div.result-grade input {
+    width: 80px;
+    height: 80px;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body section.container main section.main-part div.result-inputs form div.result-grade input {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+}
+html body section.container main section.main-part div.result-inputs form div.result-grade #circle-credit {
   border: 3px solid #37e2d5;
   animation-name: border_color1;
   animation-duration: 8s;
   animation-iteration-count: infinite;
 }
-html body section.container main section.main-part form div.result-grade #circle-grade {
+@media screen and (max-width: 320px) {
+  html body section.container main section.main-part div.result-inputs form div.result-grade #circle-credit {
+    border: 2px solid #37e2d5;
+  }
+}
+html body section.container main section.main-part div.result-inputs form div.result-grade #circle-grade {
   border: 3px solid #fb5050;
   animation-name: border_color2;
   animation-duration: 8s;
   animation-iteration-count: infinite;
 }
-html body section.container main section.main-part form div.result-grade #circle-gpa {
+@media screen and (max-width: 320px) {
+  html body section.container main section.main-part div.result-inputs form div.result-grade #circle-grade {
+    border: 2px solid #fb5050;
+  }
+}
+html body section.container main section.main-part div.result-inputs form div.result-grade #circle-gpa {
   border: 3px solid #fedb39;
   animation-name: border_color3;
   animation-duration: 8s;
   animation-iteration-count: infinite;
+}
+@media screen and (max-width: 320px) {
+  html body section.container main section.main-part div.result-inputs form div.result-grade #circle-gpa {
+    border: 2px solid #fedb39;
+  }
 }
 html body footer {
   width: 100%;
@@ -230,6 +444,26 @@ html body footer {
   background-color: #121212;
   color: white;
   font-size: 1.05rem;
+}
+@media screen and (max-width: 1024px) {
+  html body footer {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html body footer {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  html body footer {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  html body footer {
+    font-size: 0.7rem;
+  }
 }
 
 @keyframes border_color1 {
